@@ -16,7 +16,7 @@ npm run dev
 
 **admin账号**
 
-账号：admin 密码：mymedusaisverystrong
+账号：admin 密码：123456
 
 **其他账号**
 
