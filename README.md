@@ -12,9 +12,14 @@ npm install
 npm run dev
 ```
 
-admin账号
-admin mymedusaisvarystrong
+**admin账号**
 
-其他账号
+admin 
+
+mymedusaisvarystrong
+
+**其他账号**
+
 xx xx12345
+
 aa aa12345
