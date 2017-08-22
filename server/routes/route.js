@@ -9,7 +9,7 @@ var router = express.Router()
 router.post('/signin', function (req, res) {
   let username = req.body.username
   let password = req.body.password
-  if (username === 'admin' && password === 'mymedusaisvarystrong') {
+  if (username === 'admin' && password === '123456') {
     res.send({
       type: 'success',
       username: 'admin'

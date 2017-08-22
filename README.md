@@ -1,4 +1,4 @@
-# my_medusa_is_vary_strong
+# my_medusa_is_very_strong
 
 简单的管理软件
 
@@ -16,7 +16,7 @@ npm run dev
 
 **admin账号**
 
-账号：admin 密码：mymedusaisvarystrong
+账号：admin 密码：mymedusaisverystrong
 
 **其他账号**
 

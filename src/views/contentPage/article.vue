@@ -6,7 +6,7 @@
         <el-card>
 
           <div class="toolbar">
-            <el-button type="primary" @click='addArticle'>添加</el-button>
+            <el-button v-if="isAdmin" type="primary" @click='addArticle'>添加</el-button>
           </div>
 
           <page-table :ref="tableName" :action="action">
@@ -36,7 +36,7 @@
                 {{scope.row.mr }}
               </template>
             </el-table-column>
-            <el-table-column label="操作" width="120" align="center">
+            <el-table-column label="操作" width="120" align="center" v-if="isAdmin">
               <template scope="scope">
                 <el-button @click.native.prevent="modifyArticle(scope.row.channelNo)" type="text" size="small">修改</el-button>
                 <el-button @click.native.prevent="del(scope.row.channelNo)" type="text" size="small">删除</el-button>
@@ -62,6 +62,7 @@ export default {
   data () {
     return {
       tableName: 'articleList',
+      isAdmin: window.localStorage.medusaUser === 'admin',
       action: function (params) {
         return Vue.http.post('/service/getDataList', params)
       }
