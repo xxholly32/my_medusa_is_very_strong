@@ -1,0 +1,142 @@
+.fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.link-text {
+    color: @primary-color;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.page {
+    padding-top: 3rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12);
+    z-index: 100;
+}
+
+.header-brand {
+    width: @menubar-width;
+    height: 100%;
+    color: #fff;
+    background: @primary-color;
+    text-align: center;
+    font: 1.2rem/3rem 'opensans';
+}
+
+.site-menubar {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    bottom: 0;
+    width: @menubar-width;
+    z-index: 99;
+    background: @menubar-bg;
+    color: rgba(163, 175, 183, .9);
+}
+
+.site-menu>li>a {
+    display: block;
+    padding: 0 1.5rem;
+    line-height: 2.1rem;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: rgba(255, 255, 255, .8);
+        background-color: rgba(255, 255, 255, .02);
+    }
+    &.active {
+        background: #1D262C;
+        color: #fff;
+    }
+    i {
+        margin-right: 0.7rem;
+    }
+}
+
+.site-menubar-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    >a {
+        display: block;
+        height: 3rem;
+        background: #21292e;
+        color: #76838f;
+        line-height: 3rem;
+        text-align: center;
+        &:hover {
+            color: rgba(255, 255, 255, .8);
+            background: #1e2427;
+        }
+    }
+}
+
+.content-container {
+    min-height: 100%;
+    margin-left: 12rem;
+    padding: @padding-normal;
+    background: #f1f4f5;
+}
+
+.toolbar {
+    margin-bottom: @padding-normal;
+}
+
+.icon-list {
+    margin-right: -@padding-normal;
+    font-size: 0.6rem;
+    overflow: hidden;
+    >li {
+        width: 5.6rem;
+        height: 5.6rem;
+        margin: 0 @padding-normal @padding-normal 0;
+        padding: 1rem 0.2rem 0;
+        text-align: center;
+        float: left;
+        word-break: break-all;
+        border: 2px dashed transparent;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        overflow: hidden;
+        &.selected {
+            border-color: #87BDEF;
+        }
+        &:hover {
+            background: #fafafa;
+        }
+    }
+    svg {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin: 0.4rem 0 0.3rem;
+    }
+    img {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
+.btn-icon{
+    padding-left:10px;
+    padding-right:10px;
+    color: inherit;
+}
